@@ -1,12 +1,9 @@
-* {
-    outline: 2px solid red;
-  }
 
 body {
     display: flex;
     max-width: 1200px;
     margin: auto;
-    /* background-color: rgb(49, 32, 32); */
+    background-color: rgb(49, 32, 32);
 }
 
 .left, .right {
@@ -14,34 +11,65 @@ body {
 }
 
 .left {
-    width: 35vh;
+    width: 33vw;
     background: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center/cover no-repeat ;
 }
 
 .right {
-    width: 60vh;
+    width: 60vw;
+}
+
+.logo {
+    display: flex;
+    margin-top: 30%;
+    background-color: black;
+    opacity: 0.5;
+    font-size: 2rem;
+    color: white
+}
+
+.logo p {
+    margin-left: 5%;
+}
+
+.image {
+    background: url(https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png) center/contain no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-left: 10%;
 }
 
 .first, .second, .third {
     height: 33vh;
     width: 100%;
+    padding-left: 8%;
+    padding-top: 5%
 }
 
 /* right first */
 .first {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     background-color: #E5E7EB;
+    font-size: large;
 }
 
 .first p {
-    flex-grow: 0;
+    width: 70%;
+    font-size: 2rem;
+    font-weight: 550;
+    /* padding-bottom: 10%; */
+    /* margin-bottom: 10%; */
 }
 
+.first p:first-child {
+    margin-bottom: -20px;
+}
 /* right second */
 .second {
     background-color: aliceblue;
+    
 }
 .container {
     display: flex;
@@ -54,13 +82,25 @@ input {
     border: red;
 }
 
+label {
+    font-size: 23px;
+}
 /* right third */
 button {
     flex: none;
     display: block;
     background-color: #596D48;
+    border-radius: 4px;
+    min-height: 5vh;
+    min-width: 10vw;
+    cursor: pointer
 }
 
 .third {
     background-color: #E5E7EB;
+    font-size: large;
+}
+
+:link {
+    color: #596D48;
 }
